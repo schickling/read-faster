@@ -28,7 +28,7 @@ angular.module('readFasterApp')
         }
 
         function parse(text) {
-          words = scope.text.split(/[\s|\n]/);
+          words = scope.text.split(/[\s|\n|,|-]+/);
         }
 
       }

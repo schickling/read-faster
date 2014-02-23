@@ -1,12 +1,13 @@
 'use strict';
 
 angular.module('readFasterApp')
-  .directive('ticker', function () {
+  .directive('ticker', function() {
     return {
-      template: '<div></div>',
+      template: '<span>{{word}}</span>',
       restrict: 'E',
       link: function postLink(scope, element, attrs) {
-        element.text('this is the ticker directive');
+        scope.word = "Test";
+        // element.text('this is the ticker directive');
       }
     };
   });

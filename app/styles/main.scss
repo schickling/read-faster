@@ -84,3 +84,42 @@ body {
         border-bottom: 0;
     }
 }
+
+
+ticker {
+    display: inline-block;
+    width: 400px;
+    padding: 10px 0;
+    border-top: 4px solid #000;
+    border-bottom: 4px solid #000;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 41%;
+      width: 2px;
+      height: 8px;
+      background-color: #000;
+      content: "";
+    }
+
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: 41%;
+      width: 2px;
+      height: 8px;
+      background-color: #000;
+      content: "";
+    }
+
+    span {
+      display: inline-block;
+      width: 300px;
+      margin-left: -70px;
+      text-align: center;
+      font-size: 25px;
+      font-weight: bold;
+    }
+}

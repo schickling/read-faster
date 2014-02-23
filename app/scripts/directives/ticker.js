@@ -16,7 +16,7 @@ angular.module('readFasterApp')
 
         setInterval(function() {
           renderNextWord();
-        }, 400);
+        }, 200);
 
         scope.$watch('text', function(text) {
           parse(text);
